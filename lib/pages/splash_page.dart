@@ -8,11 +8,12 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> {
-
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 3)).then((_) => Navigator.of(context).pushReplacementNamed('/login'),);
+    Future.delayed(Duration(seconds: 3)).then(
+      (_) => Navigator.of(context).pushReplacementNamed('/login'),
+    );
   }
 
   @override
